@@ -2,7 +2,7 @@ $(function() {
 	particlesJS("particles-js", {
 		"particles": {
 			"number": {
-				"value": 100,
+				"value": 150,
 				"density": {
 					"enable": true,
 					"value_area": 800
@@ -12,7 +12,7 @@ $(function() {
 				"value": "#ffffff"
 			},
 			"shape": {
-				"type": "circle",
+				"type": "polygon",
 				"stroke": {
 					"width": 0,
 					"color": "#000000"
@@ -37,7 +37,7 @@ $(function() {
 				}
 			},
 			"size": {
-				"value": 3,
+				"value": 3.5,
 				"random": true,
 				"anim": {
 					"enable": false,
@@ -57,7 +57,7 @@ $(function() {
 				"enable": true,
 				"speed": 3,
 				"direction": "bottom",
-				"random": false,
+				"random": true,
 				"straight": false,
 				"out_mode": "out",
 				"bounce": false,
@@ -72,27 +72,31 @@ $(function() {
 			"detect_on": "canvas",
 			"events": {
 				"onhover": {
+					"enable": false,
+					"mode": "bubble"
+				},
+				"onhover": {
 					"enable": true,
 					"mode": "grab"
 				},
 				"onclick": {
-					"enable": false,
+					"enable": true,
 					"mode": "repulse"
 				},
 				"resize": true
 			},
 			"modes": {
 				"grab": {
-					"distance": 100,
+					"distance": 200,
 					"line_linked": {
 						"opacity": 1
 					}
 				},
 				"bubble": {
-					"distance": 400,
-					"size": 40,
+					"distance": 200,
+					"size": 5,
 					"duration": 2,
-					"opacity": 8,
+					"opacity": 0.8,
 					"speed": 3
 				},
 				"repulse": {
