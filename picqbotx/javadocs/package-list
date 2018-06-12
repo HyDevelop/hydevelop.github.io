@@ -20,6 +20,5 @@ cc.moecraft.icq.sender.returndata.returnpojo
 cc.moecraft.icq.sender.returndata.returnpojo.get
 cc.moecraft.icq.sender.returndata.returnpojo.send
 cc.moecraft.icq.user
-cc.moecraft.icq.utils
 cc.moecraft.test.general
 cc.moecraft.test.icq
