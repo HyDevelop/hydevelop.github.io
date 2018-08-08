@@ -1,0 +1,45 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=GB18030">
+	<script src="jquery-3.3.1.min.js"></script>
+</head>
+<style>
+	body
+	{
+		height: 200px;
+		width: 400px;
+		background: black;
+
+		position: fixed;
+		top: 25%;
+		left: 50%;
+		margin-top: 0;
+		margin-left: -200px;
+	}
+</style>
+<body class="to-inject" style="background-color:white; text-align: center">
+	
+</body>
+<script type="text/javascript">
+	function getOrientation()
+	{
+		return Math.abs(window.orientation) - 90 == 0 ? "landscape" : "portrait";
+	};
+
+	function calculate()
+	{
+		var injectLoc = $(".to-inject").html("Results:");
+		injectLoc.append("<br><br>window.screen.availHeight = " + window.screen.availHeight);
+		injectLoc.append("<br>window.screen.availWidth  = " + window.screen.availWidth);
+		injectLoc.append("<br><br>window.screen.height = " + window.screen.height);
+		injectLoc.append("<br>window.screen.width  = " + window.screen.width);
+		injectLoc.append("<br><br>window.innerHeight = " + window.innerHeight);
+		injectLoc.append("<br>window.innerWidth  = " + window.innerWidth);
+		injectLoc.append("<br><br>getOrientation()  = " + getOrientation());
+		injectLoc.append("<br>window.orientation  = " + window.orientation);
+	}
+
+	window.onload = calculate;
+	window.onresize = calculate;
+</script>
+</html>
