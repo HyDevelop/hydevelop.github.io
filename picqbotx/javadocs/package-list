@@ -21,11 +21,3 @@ cc.moecraft.icq.sender.returndata.returnpojo.get
 cc.moecraft.icq.sender.returndata.returnpojo.send
 cc.moecraft.icq.user
 cc.moecraft.icq.utils
-cc.moecraft.test.general
-cc.moecraft.test.icq
-cc.moecraft.test.icq.commands
-cc.moecraft.test.icq.features.annoy
-cc.moecraft.test.icq.features.antirecall
-cc.moecraft.test.icq.features.codec
-cc.moecraft.test.icq.features.say
-cc.moecraft.test.icq.listeners
